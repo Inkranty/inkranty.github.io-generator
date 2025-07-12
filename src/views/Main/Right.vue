@@ -27,7 +27,7 @@ const siteUrl = computed(() => {
     const urlFormat = url.replace(/^(https?:\/\/)/, "");
     return urlFormat.split(".");
   }
-  return url.split(".");
+  return ['inkranty', 'qzz.io']
 });
 </script>
 
@@ -38,7 +38,7 @@ const siteUrl = computed(() => {
   margin-left: 0.75rem;
   .logo {
     width: 100%;
-    font-family: "Pacifico-Regular";
+    font-family: "monospace";
     font-size: 2.25rem;
     position: fixed;
     top: 6%;

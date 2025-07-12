@@ -89,10 +89,10 @@ export const helloInit = () => {
   } else {
     hello = "夜深了";
   }
-  ElMessage({
-    dangerouslyUseHTMLString: true,
-    message: `<strong>${hello}</strong> 欢迎来到我的主页`,
-  });
+  // ElMessage({
+  //   dangerouslyUseHTMLString: true,
+  //   message: `<strong>${hello}</strong> 欢迎来到我的主页`,
+  // });
 };
 
 // 默哀模式

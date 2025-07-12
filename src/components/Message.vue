@@ -47,7 +47,7 @@ const siteUrl = computed(() => {
     const urlFormat = url.replace(/^(https?:\/\/)/, "");
     return urlFormat.split(".");
   }
-  return url.split(".");
+  return ['inkranty', 'qzz.io']
 });
 
 // 简介区域文字
@@ -103,15 +103,15 @@ watch(
       width: 100%;
       padding-left: 22px;
       transform: translateY(-8px);
-      font-family: "Pacifico-Regular";
+      font-family: "monospace";
 
       .bg {
-        font-size: 5rem;
+        font-size: 2rem;
       }
 
       .sm {
         margin-left: 6px;
-        font-size: 2rem;
+        font-size: 1rem;
         @media (min-width: 721px) and (max-width: 789px) {
           display: none;
         }
@@ -124,7 +124,8 @@ watch(
       .name {
         height: 128px;
         .bg {
-          font-size: 4.5rem;
+          line-height: 128px;
+          font-size: 2rem;
         }
       }
     }
@@ -152,7 +153,7 @@ watch(
 
         p {
           &:nth-of-type(1) {
-            font-family: "Pacifico-Regular";
+            font-family: "monospace";
           }
         }
       }

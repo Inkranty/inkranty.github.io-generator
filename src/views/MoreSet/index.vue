@@ -69,7 +69,7 @@ const siteUrl = computed(() => {
     const urlFormat = url.replace(/^(https?:\/\/)/, "");
     return urlFormat.split(".");
   }
-  return url.split(".");
+  return ['inkranty', 'qzz.io']
 });
 
 // 更新日志
@@ -132,34 +132,34 @@ const jumpTo = (url) => {
 
       .logo {
         transform: translateY(-8%);
-        font-family: "Pacifico-Regular";
+        font-family: "monospace";
         padding-left: 22px;
         width: 100%;
         height: 260px;
         min-height: 140px;
         .bg {
-          font-size: 5rem;
+          font-size: 3rem;
         }
 
         .sm {
           margin-left: 6px;
-          font-size: 2rem;
+          font-size: 1rem;
         }
 
         @media (max-width: 990px) {
           .bg {
-            font-size: 4.5rem;
+            font-size: 2.5rem;
           }
           .sm {
-            font-size: 1.7rem;
+            font-size: 0.7rem;
           }
         }
         @media (max-width: 825px) {
           .bg {
-            font-size: 3.8rem;
+            font-size: 2.2rem;
           }
           .sm {
-            font-size: 1.3rem;
+            font-size: 0.5rem;
           }
         }
       }
@@ -171,7 +171,7 @@ const jumpTo = (url) => {
 
         .num {
           font-size: 2rem;
-          font-family: "Pacifico-Regular";
+          font-family: "monospace";
         }
 
         .github {

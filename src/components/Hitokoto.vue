@@ -51,15 +51,15 @@ const getHitokotoData = async () => {
     hitokotoData.text = result.hitokoto;
     hitokotoData.from = result.from;
   } catch (error) {
-    ElMessage({
-      message: "一言获取失败",
-      icon: h(Error, {
-        theme: "filled",
-        fill: "#efefef",
-      }),
-    });
-    hitokotoData.text = "这里应该显示一句话";
-    hitokotoData.from = "無名";
+    // ElMessage({
+    //   message: "一言获取失败",
+    //   icon: h(Error, {
+    //     theme: "filled",
+    //     fill: "#efefef",
+    //   }),
+    // });
+    hitokotoData.text = "世界是一个巨大的迪克。";
+    hitokotoData.from = "Inkranty";
   }
 };
 
